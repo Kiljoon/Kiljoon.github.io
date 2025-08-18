@@ -13,11 +13,11 @@ My research interests include computer vision, 3D perception, and deep learning.
 
 Education & Research Experience
 ======
-- **M.S. in Automotive Engineering**<br>
+- **M.S. in Artificial Intelligence**<br>
 Daegu Gyeongbuk Institute of Science and Technology (**DGIST**), South Korea.<br>
 Feb 2023 - Aug 2025
 
-- **B.S. in Mechanical and Automotive Engineering**<br>
+- **B.S. in Embedded System Engineering**<br>
 Incheon National University (**INU**), South Korea.<br>
 Mar 2017 - Feb 2023
 
