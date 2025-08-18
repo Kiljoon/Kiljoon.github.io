@@ -25,7 +25,7 @@ Mar 2017 - Feb 2023
 Publications
 ======
 
-<img src='/images/iid_mono.png' style="width: 350px; height: 200px; margin-bottom: -20px;">
+<img src='/images/iid_mono.png' style="width: 350px; margin-bottom: -20px;">
 
 ### Intrinsic Image Decomposition for Robust Self-supervised Monocular Depth Estimation on Reflective Surfaces
 Wonhyeok Choi, Kyumin Hwang, Minwoo Choi,  **Kiljoon Han**, Wonjoon Choi, Mingyu Shin, Sunghoon Im<br>
@@ -34,7 +34,7 @@ The Association for the Advancement of Artificial Intelligence (**AAAI**), 2025.
 
 ---
 
-<img src='/images/cavis.png' style="width: 350px; height: 200px; margin-bottom: -20px;">
+<img src='/images/cavis.png' style="width: 350px; margin-bottom: -20px;">
 
 ### CAVIS: Context-Aware Video Instance Segmentation
 Seunghun Lee, Jiwan Seo, **Kiljoon Han**, Minwoo Choi, Sunghoon Im<br>
@@ -43,7 +43,7 @@ IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
 
 ---
 
-<img src='/images/lomm.png' style="width: 350px; height: 200px; margin-bottom: -20px;">
+<img src='/images/lomm.png' style="width: 350px; margin-bottom: -20px;">
 
 ### LOMM: Latest Object Memory Management for Temporally Consistent Video Instance Segmentation
 Seunghun Lee, Jiwan Seo, Minwoo Choi, **Kiljoon Han**, Sunghoon Im<br>
@@ -58,7 +58,7 @@ IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
 Under-Review
 ======
 
-<img src='/images/deq_stereo.png' style="width: 350px; height: 200px; margin-bottom: -20px;">
+<img src='/images/deq_stereo.png' style="width: 350px; margin-bottom: -20px;">
 
 ### DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence
 **Kiljoon Han**, Kyumin Hwang, Wonhyeok Choi, Jeonghoon Kim, Sunghoon Im <br>
