@@ -54,7 +54,7 @@ IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
 
 <div style="margin-bottom: 20px;"></div>
 
-
+<!-- 
 Under-Review
 ======
 
@@ -67,7 +67,7 @@ The Association for the Advancement of Artificial Intelligence (**AAAI**), 2026.
 
 ---
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-bottom: 20px;"></div> -->
 
 Projects
 ======
