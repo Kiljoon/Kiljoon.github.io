@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Kiljun Han, an M.S. graduate in Artificial Intelligence at DGIST in South Korea. I conducted my research in the [DGIST Computer Vision Lab](https://cvlab.dgist.ac.kr/) under the supervision of Prof. [Sunghoon Im](https://sunghoonim.github.io/), focusing on depth estimation, particularly monocular and stereo depth estimation.
+Hello, I am Kiljoon Han, an M.S. graduate in Artificial Intelligence at DGIST in South Korea. I conducted my research in the [DGIST Computer Vision Lab](https://cvlab.dgist.ac.kr/) under the supervision of Prof. [Sunghoon Im](https://sunghoonim.github.io/), focusing on depth estimation, particularly monocular and stereo depth estimation.
 My research interests include computer vision, 3D perception, and deep learning.
 
 
