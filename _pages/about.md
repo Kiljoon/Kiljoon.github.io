@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Kiljoon Han, an M.S. graduate in Artificial Intelligence at DGIST in South Korea. I conducted my research in the [DGIST Computer Vision Lab](https://cvlab.dgist.ac.kr/) under the supervision of Prof. [Sunghoon Im](https://sunghoonim.github.io/), focusing on depth estimation, particularly monocular and stereo depth estimation.
+Hello, I am Kiljoon Han, an M.S. graduate in Artificial Intelligence at DGIST in South Korea. I conducted my research in the [DGIST Computer Vision Lab](https://sunghoonim.github.io/index.html) under the supervision of Prof. [Sunghoon Im](https://sunghoonim.github.io/professor/index.html), focusing on depth estimation, particularly monocular and stereo depth estimation.
 My research interests include computer vision, 3D perception, and deep learning.
 
 
@@ -24,6 +24,14 @@ Mar 2017 - Feb 2023
 
 Publications
 ======
+
+<img src='/images/deq_stereo.png' style="width: 400px; margin-bottom: -20px;">
+
+### DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence
+**Kiljoon Han**, Kyumin Hwang, Wonhyeok Choi, Jeonghoon Kim, Sunghoon Im<br>
+Asian Conference on Computer Vision (**ACCV**), 2026.<br>
+
+---
 
 <img src='/images/scale_invariant.png' style="width: 400px; margin-bottom: -20px;">
 
@@ -48,7 +56,7 @@ The Association for the Advancement of Artificial Intelligence (**AAAI**), 2025.
 ### CAVIS: Context-Aware Video Instance Segmentation
 Seunghun Lee, Jiwan Seo, **Kiljoon Han**, Minwoo Choi, Sunghoon Im<br>
 IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
-[[Paper](https://arxiv.org/abs/2407.03010)]
+[[Paper](https://arxiv.org/abs/2407.03010)] [[Project](https://seung-hun-lee.github.io/projects/CAVIS/)]
 
 ---
 
@@ -57,7 +65,7 @@ IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
 ### LOMM: Latest Object Memory Management for Temporally Consistent Video Instance Segmentation
 Seunghun Lee, Jiwan Seo, Minwoo Choi, **Kiljoon Han**, Sunghoon Im<br>
 IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025.<br>
-[[Paper](https://arxiv.org/abs/2507.19754)]
+[[Paper](https://arxiv.org/abs/2507.19754)] [[Project](https://seung-hun-lee.github.io/projects/LOMM/)]
 
 ---
 
@@ -80,10 +88,10 @@ The Association for the Advancement of Artificial Intelligence (**AAAI**), 2026.
 
 Projects
 ======
-- ETRI: A Study on the Depth Estimation based on Stereo Matching. [[Completed 16](https://cvlab.dgist.ac.kr/project/)]
-- K****: Development of Multi-camera-based Depth Estimation Software. [[Completed 24](https://cvlab.dgist.ac.kr/project/)]
-- KRIT: Research on multi-sensor-based 3D Reconstruction and analysis technology for intelligent recognition and decision-making. [[On-going 7](https://cvlab.dgist.ac.kr/project/)]
-- Hyundai NGV : Development of Multi-camera-based Depth Estimation. [[On-going 11](https://cvlab.dgist.ac.kr/project/)]
+- ETRI: A Study on the Depth Estimation based on Stereo Matching. [[Completed 16](https://sunghoonim.github.io/projects.html)]
+- K****: Development of Multi-camera-based Depth Estimation Software. [[Completed 24](https://sunghoonim.github.io/projects.html)]
+- KRIT: Research on multi-sensor-based 3D Reconstruction and analysis technology for intelligent recognition and decision-making. [[On-going 14](https://sunghoonim.github.io/projects.html)]
+- Hyundai NGV : Development of Multi-camera-based Depth Estimation. [[Completed 30](https://sunghoonim.github.io/projects.html)]
 
 <div style="margin-bottom: 20px;"></div>
 
@@ -97,7 +105,7 @@ Awards
 
 Reviewer
 ======
-- The Association for the Advancement of Artificial Intelligence (**AAAI**)
+- The Association for the Advancement of Artificial Intelligence (**AAAI**), 2025-Present
 
 <div style="margin-bottom: 20px;"></div>
 
