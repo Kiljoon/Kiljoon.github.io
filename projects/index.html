@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Video Stereo Matching, Deep Equilibrium model, 3D Vision, Perception">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence</title>
+
+  <style>
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .navbar-brand .navbar-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <!-- Please replace the icon image with your icon -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- load JavaScript library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item"
+        href="https://kiljoon.github.io/"
+        aria-label="Home">
+        <span class="icon">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-2 publication-title">DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://kiljoon.github.io/" target="_blank">Kiljoon Han</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://kyuminhwang.github.io/" target="_blank">Kyumin Hwang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://wonhyeok-choi.github.io/" target="_blank">Wonhyeok Choi</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://rv.kaist.ac.kr/member-jeonghoon-kim.html" target="_blank">Jeonghoon Kim</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://sunghoonim.github.io" target="_blank">Sunghoon Im</a><sup>2,&dagger;</sup>,</span>
+            </div>
+
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">Institution Name<br>Conferance name and year</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div> -->
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">DGIST<sup>1</sup>, KAIST<sup>2</sup></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                  <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/Kiljoon/DEQ-Stereo/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/banner_video.mp4"
+          type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Iterative refinement models have significantly improved stereo matching accuracy, but their rigid, fixed update schedules
+              incur heavy computational costs and a strict trade-off between speed and accuracy. This challenge is magnified in video streams,
+              where traditional online methods resort to reducing feature channels or relying on expensive temporal warping.
+              To address this, we propose DEQ-Stereo, a novel video stereo matching framework based on the Deep Equilibrium (DEQ) paradigm.
+              Instead of unrolling a fixed number of iterations, DEQ-Stereo reformulates the refinement as an implicit fixed-point problem,
+              adaptively terminating once convergence is met. To ensure fast and stable intra-frame convergence, we introduce the Convolutional Simplified Gated Unit (ConvSGU),
+              which eliminates unnecessary non-linearities by modeling the latent state as a gated, element-wise sum of inputs. Furthermore, to exploit cross-frame temporal coherence,
+              we propose Temporal State Transfer (TST), a warm-start strategy that propagates the converged hidden state to the next frame
+              without requiring explicit pose or warping priors. Extensive evaluations demonstrate
+              that DEQ-Stereo delivers state-of-the-art performance with a superior accuracy-to-latency trade-off.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-nine-tenths">
+          <h2 class="title is-3">Motivation</h2>
+          <img src="./images/motivation.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <!-- <div class="content has-text-justified">
+              <p>
+                Comprison on OVIS, YTVIS19, and YTVIS21 datasets.
+              </p>
+                </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-nine-tenths">
+          <h2 class="title is-3">Method</h2>
+          <img src="./images/main_pipeline.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <!-- <div class="content has-text-justified">
+              <p>
+                Comprison on OVIS, YTVIS19, and YTVIS21 datasets.
+              </p>
+                </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            First image description.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+          Third image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fourth image description.
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section> -->
+  <!-- End image carousel -->
+
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel1.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel2.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <source src="static/videos/carousel3.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>
