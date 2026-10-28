@@ -30,7 +30,7 @@ Publications
 ### DEQ-Stereo: Deep Equilibrium Video Stereo Matching via Adaptive Convergence
 **Kiljoon Han**, Kyumin Hwang, Wonhyeok Choi, Jeonghoon Kim, Sunghoon Im<br>
 Asian Conference on Computer Vision (**ACCV**), 2026.<br>
-[[Project](https://kiljoon.github.io/projects/)]
+[[Project](https://kiljoon.github.io/projects/DEQStereo/)]
 
 ---
 
