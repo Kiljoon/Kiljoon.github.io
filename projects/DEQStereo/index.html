@@ -38,7 +38,7 @@
     }
 
     .video-wrapper {
-      width: 280px;
+      width: 800px;
       /* 고정된 너비 */
       height: 200px;
       /* 고정된 높이 */
@@ -167,17 +167,22 @@
 
 
   <!-- Teaser video-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="./videos/stereo_comparison_eth3d.mp4"
-          type="video/mp4">
-        </video>
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="./videos/stereo_comparison.mp4"
-          type="video/mp4">
-        </video>
+  <section class="section">
+    <div class="container is-fluid">
+      <div class="columns is-centered has-text-centered">
+        <div class="video-wrapper">
+          <video poster="" id="tree" autoplay controls muted loop playsinline>
+            <source src="./videos/stereo_comparison_eth3d.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="video-wrapper">
+          <video poster="" id="tree" autoplay controls muted loop playsinline>
+            <source src="./videos/stereo_comparison.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </section>
