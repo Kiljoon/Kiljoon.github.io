@@ -1,8 +1,8 @@
 from moviepy import VideoFileClip
 
-clip = VideoFileClip("stereo_comparison_eth3d.mp4")
+clip = VideoFileClip("stereo_comparison.mp4")
 clip.write_videofile(
-    "stereo_comparison_eth3d_fixed.mp4",
+    "stereo_comparison_kitti_fixed.mp4",
     codec="libx264",
     audio_codec="aac",
     ffmpeg_params=[
